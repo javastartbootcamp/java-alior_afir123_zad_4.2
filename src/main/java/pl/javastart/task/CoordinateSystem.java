@@ -17,18 +17,18 @@ public class CoordinateSystem {
 
     String pointCheck(Point point) {
         if (point.x != 0 && point.y == 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży na osi X";
+            return "Punkt (" + point.x + ", " + point.y + ") leży na osi X";
         } else if (point.x == 0 && point.y != 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży na osi Y";
+            return "Punkt (" + point.x + ", " + point.y + ") leży na osi Y";
         } else if (point.x > 0 && point.y > 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży w I ćwiartce układu współrzędnych";
+            return "Punkt (" + point.x + ", " + point.y + ") leży w I ćwiartce układu współrzędnych";
         } else if (point.x > 0 && point.y < 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży w IV ćwiartce układu współrzędnych";
+            return "Punkt (" + point.x + ", " + point.y + ") leży w IV ćwiartce układu współrzędnych";
         } else if (point.x < 0 && point.y > 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży w II ćwiartce układu współrzędnych";
+            return "Punkt (" + point.x + ", " + point.y + ") leży w II ćwiartce układu współrzędnych";
         } else if (point.x < 0 && point.y < 0) {
-            return "Punkt (" + point.x + "," + point.y + ") leży w III ćwiartce układu współrzędnych";
+            return "Punkt (" + point.x + ", " + point.y + ") leży w III ćwiartce układu współrzędnych";
         }
-        return "Punkt (" + point.x + "," + point.y + ") leży na środku układu współrzędnych";
+        return "Punkt (" + point.x + ", " + point.y + ") leży na środku układu współrzędnych";
     }
 }
