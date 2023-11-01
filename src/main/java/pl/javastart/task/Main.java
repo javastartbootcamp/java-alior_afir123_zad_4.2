@@ -8,8 +8,5 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         coordinateSystem.run(scanner);
 
-        Point point1 = new Point(coordinateSystem.x, coordinateSystem.y);
-        String result = coordinateSystem.pointCheck(point1);
-        System.out.println(result);
     }
 }
